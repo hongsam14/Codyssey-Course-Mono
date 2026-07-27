@@ -1,12 +1,15 @@
-# --- Skill Frontmatter (required) ---
+---
+# Skill Frontmatter (required)
 id: <slug>                      # e.g. "socratic-hint-ladder"
 title: <human-readable name>    # e.g. "Socratic Hint Ladder"
 category: <pedagogy | diagnostic | code-review | scaffolding | other>
 trigger: <when the tutor should apply this skill>   # e.g. "learner is fully stuck at Gate 1"
-gate: <Draft | Verify | Articulate | any>           # which HITL gate this serves
+gate: <Draft | Verify | Articulate | Assessment | any>   # which HITL gate/mode this serves
 solo_target: <L0 | L1 | L2 | L3 | L4 | any>         # level this skill aims to move the learner toward
+requires: <none | filesystem | web-tool>            # host capability this skill needs (else it no-ops / degrades)
+distribution: <core | example>                      # core = installed payload; example = manual-adopt from examples/
 source: <citation | "reasoned from general principles">
-verified: <true | false>        # true ONLY after human confirmation at Gate 2
+verified: <true | false>        # for a Skill: true = reviewed/approved by a human maintainer
 updated: <YYYY-MM-DD>
 ---
 

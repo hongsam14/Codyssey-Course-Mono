@@ -1,4 +1,5 @@
-# --- Knowledge Frontmatter (required) ---
+---
+# Knowledge Frontmatter (required)
 id: <slug>                      # e.g. "tcp-reliability"
 title: <human-readable name>    # e.g. "TCP Reliability Guarantees"
 category: <concept | fact | pattern | pitfall | reference | other>
@@ -8,6 +9,7 @@ verified: <true | false>        # true ONLY after human confirmation at Gate 2
 authored_by: <learner | tutor>  # prefer "learner" at L4 (§7: deepens retention)
 updated: <YYYY-MM-DD>
 related_skills: [<skill-id>, ...]   # Skills that draw on this entry
+provenance: <dialogue/<topic>.md | none>   # back-link to the dialogue that produced it (§12)
 ---
 
 # <Title>
@@ -38,4 +40,5 @@ related_skills: [<skill-id>, ...]   # Skills that draw on this entry
 ## 6. Provenance
 - **Reached via:** Gate 3 (Articulate) on <YYYY-MM-DD>
 - **Verified at:** Gate 2 by <human | pending>
+- **Dialogue:** <dialogue/<topic>.md | none>
 - **Original learner articulation:** "<quote, if authored_by: learner>"
