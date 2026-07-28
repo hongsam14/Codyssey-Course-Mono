@@ -216,3 +216,6 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Sailor install baseline must be tracked (overrides *.manifest above)
+!sailor.manifest
